@@ -3,6 +3,13 @@ import "./protest.css";
 import { Link } from "react-router-dom";
 
 const Protest = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth'
+    })
+  }
+
   return (
     <>
       <div className="container" id="protestContainer">
@@ -14,7 +21,7 @@ const Protest = () => {
 
           <div className="protestDiv2" style={{ backgroundColor: "lightyellow", paddingLeft: "10px", paddingRight: "10px" }}>
             <a className="protestNumber">1</a>
-            <a className="protestTip">Bring a facemask/Bandana</a>
+            <a className="protestTip">Bring a facemask</a>
           </div>
 
           <div className="protestDiv2" style={{ backgroundColor: "lavenderblush", paddingLeft: "10px", paddingRight: "10px" }}>
@@ -77,7 +84,7 @@ const Protest = () => {
         </div >
       </div>
       <div className="backDiv">
-        <Link className="backButton" tag={Link} to="/">back</Link>
+        <Link onClick={scrollToTop} className="backButton" tag={Link} to="/">back</Link>
       </div>
     </>
   )

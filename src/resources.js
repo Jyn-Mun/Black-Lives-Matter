@@ -4,6 +4,12 @@ import { Accordion, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Resources = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth'
+    })
+  }
   return (
     <>
       <div className="container" id="resourceContainer">
@@ -275,7 +281,7 @@ const Resources = () => {
 
       </div>
       <div className="backDiv">
-        <Link className="backButton" tag={Link} to="/">back</Link>
+        <Link onClick={scrollToTop} className="backButton" tag={Link} to="/">back</Link>
       </div>
     </>
   )

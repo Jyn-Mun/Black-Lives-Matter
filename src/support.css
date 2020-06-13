@@ -107,6 +107,12 @@
   margin-top: 40px;
 }
 
+@media screen and (max-width: 740px) {
+  .backDiv {
+    margin-left: 0;
+  }
+}
+
 .backButton {
   text-decoration: underline darkturquoise;
   color: black;

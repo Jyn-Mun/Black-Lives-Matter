@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Main from "./main";
@@ -11,6 +11,8 @@ import Educate from "./educate";
 import Resources from "./resources";
 
 function App() {
+
+
   return (
     <>
       <Route exact path="/">
