@@ -1,0 +1,52 @@
+#protestContainer {
+  margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.protestHeader {
+  font-family: 'Anton', sans-serif;
+}
+
+.protestDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.protestNumber {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.protestTip {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+  color: brown !important;
+}
+
+.protestDiv2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.protestMore {
+  display: flex;
+  flex-direction: column;
+}
+
+.protestLinks {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline darkturquoise;
+}
+
+.protestLinks:hover {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+
+.protestLinks:active {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}

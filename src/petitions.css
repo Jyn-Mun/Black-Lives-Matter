@@ -1,0 +1,56 @@
+#petitionsContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.petitionsHead {
+  font-family: 'Anton', sans-serif;
+}
+
+.petitionsAccordion {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.petitionsCardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.petitionsTopic {
+  font-family: 'Anton', sans-serif;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  background-color: lightsteelblue !important;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 740px) {
+  .petitionsTopic {
+    line-height: 1;
+    /* text-align: center; */
+  }
+}
+
+.petitionsLinks {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline darkturquoise;
+}
+
+.petitionsLinks:hover {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+
+.petitionsLinks:active {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}

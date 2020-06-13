@@ -1,0 +1,69 @@
+#donateContainer {
+  margin-top: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.donateHead {
+  font-family: 'Anton', sans-serif;
+}
+
+.donateWarning {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.donateWarningLink {
+  color: black;
+  text-decoration: underline lightskyblue;
+}
+
+.donateAccordion {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.donateCard {
+  margin-top: 10px;
+}
+
+.donateTopic {
+  font-family: 'Anton', sans-serif;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  background-color: lightsteelblue !important;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 740px) {
+  .donateTopic {
+    line-height: 1;
+    /* text-align: center; */
+  }
+}
+
+.donateCardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.donateLinks {
+  color: black;
+  /* font-weight: bold; */
+  font-size: 20px;
+  text-decoration: underline darkturquoise;
+}
+
+.donateLinks:hover {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+
+.donateLinks:active {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+

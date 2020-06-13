@@ -1,25 +1,43 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Main from "./main";
+import { Route } from "react-router-dom";
+import Petitions from "./petitions";
+import Donate from "./donate";
+import Support from "./support";
+import Protest from "./protest";
+import Educate from "./educate";
+import Resources from "./resources";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Route exact path="/">
+        <Main />
+      </Route>
+      <Route path="/petitions">
+        <Petitions />
+      </Route>
+      <Route path="/donate">
+        <Donate />
+      </Route>
+      <Route path="/support">
+        <Support />
+      </Route>
+      <Route path="/protest">
+        <Protest />
+      </Route>
+      <Route path="/educate">
+        <Educate />
+      </Route>
+      <Route path="/resources">
+        <Resources />
+      </Route>
+      <div className="mainFooterDiv">
+        <h6 className="mainFooter">created using React by <a className="mainFooterLink" href="https://www.instagram.com/jynmun/">@jynmun</a></h6>
+      </div>
+    </>
   );
 }
 

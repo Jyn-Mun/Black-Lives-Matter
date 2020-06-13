@@ -1,0 +1,88 @@
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mainTitle {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 80px;
+}
+
+
+.mainHeader {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+  .mainHeader{
+    font-size: 30px;
+  }
+}
+.mainLinks {
+  color: black;
+  /* font-weight: bold; */
+  font-family: 'Anton', sans-serif;
+  text-decoration: underline darkturquoise;
+  letter-spacing: 3px;
+}
+
+.mainLinks:hover {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+
+.mainLinks:active {
+  text-decoration: underline pink;
+  color: rgb(121, 65, 1);
+}
+
+.main-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mainBox {
+  width: 30%;
+  height: 300px;
+  background-color: pink;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: black;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.mainBox:hover{
+  text-decoration: none;
+  color: gold;
+  -webkit-text-stroke: 3px black;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainBox {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .main-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainBox {
+    font-size: 60px;
+    width: 80%;
+    margin-top: 30px;
+  }
+}
