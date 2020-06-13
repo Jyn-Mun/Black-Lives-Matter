@@ -4,6 +4,13 @@ import "./petitions.css";
 import { Link } from "react-router-dom";
 
 const Petitions = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth'
+    })
+  }
+
   return (
     <>
       <div className="container" id="petitionsContainer">
@@ -171,7 +178,7 @@ const Petitions = () => {
         <Accordion defaultActiveKey="0" className="petitionsAccordion">
           <Card>
             <Accordion.Toggle className="petitionsTopic" as={Card.Header} eventKey="1">
-              Justice For Alejandro Vargas Martinez
+              Alejandro Vargas Martinez
     </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body className="petitionsCardBody">
@@ -268,7 +275,7 @@ const Petitions = () => {
 
       </div>
       <div className="backDiv">
-        <Link className="backButton" tag={Link} to="/">back</Link>
+        <Link onClick={scrollToTop} className="backButton" tag={Link} to="/">back</Link>
       </div>
     </>
   )

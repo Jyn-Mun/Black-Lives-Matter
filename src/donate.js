@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import { Accordion, Card } from "react-bootstrap";
 
 const Donate = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth'
+    })
+  }
+
   return (
     <>
       <div className="container" id="donateContainer">
@@ -22,7 +29,7 @@ const Donate = () => {
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1" className="donateTopic">
               To Victims
-    </Accordion.Toggle>
+            </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body className="donateCardBody">
 
@@ -49,7 +56,7 @@ const Donate = () => {
         <Accordion defaultActiveKey="0" className="donateAccordion">
           <Card className="donateCard">
             <Accordion.Toggle as={Card.Header} eventKey="1" className="donateTopic">
-              Charities/Funds/People
+              Charities/Funds
     </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body className="donateCardBody">
@@ -111,7 +118,7 @@ const Donate = () => {
 
       </div>
       <div className="backDiv">
-        <Link className="backButton" tag={Link} to="/">back</Link>
+        <Link onClick={scrollToTop} className="backButton" tag={Link} to="/">back</Link>
       </div>
     </>
   )
